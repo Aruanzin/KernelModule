@@ -72,6 +72,6 @@ module_init(meu_modulo_init);
 module_exit(meu_modulo_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Seu Nome");
+MODULE_AUTHOR("Aruan Bretas e William Simonelli");
 MODULE_DESCRIPTION("Módulo de kernel para captura de teclado");
 
