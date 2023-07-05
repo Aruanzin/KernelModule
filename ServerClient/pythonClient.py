@@ -1,5 +1,6 @@
 import socket
 import time
+import os
 
 def receive_keyboard_data():
     host = '127.0.0.1'
@@ -10,11 +11,11 @@ def receive_keyboard_data():
 
     while True:
         keyboard_data = client_socket.recv(1024).decode()
+        os.system('clear')  # Limpar a tela do terminal
         print('Received keyboard data:', keyboard_data)
         time.sleep(1)  # Intervalo de 1 segundo entre as solicitações
 
     client_socket.close()
 
-if __name__ == '__main__':
+if _name_ == '_main_':
     receive_keyboard_data()
-
